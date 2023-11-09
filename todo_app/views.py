@@ -14,7 +14,7 @@ def test3(request):
 
 def create(request):
 
-    form=TodoForm()
+    form = TodoForm()
     if request.method == 'POST':
         data=TodoForm(request.POST)
         if data.is_valid():
